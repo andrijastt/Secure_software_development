@@ -4,21 +4,153 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="SQL injection XSS solution for adding new comment and searching persons">
+    <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="CSRF Attack">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.eslintrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.npmignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/ISSUE_TEMPLATE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/config-defaults.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/config-defaults.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/lite-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/lite-server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/atob" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/atob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/browser-sync" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/browser-sync" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/dev-ip" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/dev-ip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/lite-server" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/lite-server" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/lt" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/lt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/throttleproxy" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/throttleproxy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/window-size" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.bin/window-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/LICENSE.DOCS" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/LICENSE.DOCS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/browser-atob.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/browser-atob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/node-atob.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/node-atob.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/atob/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/gen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/gen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.crt" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.csr" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.csr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.key" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/certs/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.recipe.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.recipe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.reload.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.reload.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.start.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/cli-options/opts.start.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/args.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/args.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/async-tasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/async-tasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/async.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/bin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/browser-sync.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/browser-sync.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/cli-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/cli-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/cli-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/cli-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.init.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.recipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.recipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.reload.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.reload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.start.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/command.start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addCwdToWatchOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addCwdToWatchOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addDefaultIgnorePatterns.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addDefaultIgnorePatterns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addToFilesOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/addToFilesOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/appendServerDirectoryOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/appendServerDirectoryOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/appendServerIndexOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/appendServerIndexOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/copyCLIIgnoreToWatchOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/copyCLIIgnoreToWatchOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleExtensionsOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleExtensionsOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleFilesOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleFilesOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleGhostModeOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleGhostModeOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleHostOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleHostOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handlePortsOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handlePortsOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleProxyOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleProxyOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleServerOption.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/cli/transforms/handleServerOption.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/connect-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/connect-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/default-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/default-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-event-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-event-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-watcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/file-watcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/hooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/http-protocol.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/http-protocol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/internal-events.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/internal-events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/lodash.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/lodash.custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/logger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/exit.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/exit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/notify.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/notify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/pause.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/pause.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/public-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/public-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/reload.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/reload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/resume.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/resume.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/stream.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/public/stream.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/proxy-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/proxy-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/proxy-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/proxy-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/serve-static-wrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/serve-static-wrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/snippet-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/snippet-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/static-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/static-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/server/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/snippet.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/snippet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/sockets.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/sockets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/tunnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/tunnel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/dist/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/cli-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/cli-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/connector.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/connector.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/script-tags-simple.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/script-tags-simple.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/script-tags.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/browser-sync/templates/script-tags.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/LICENSE-MIT" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/LICENSE-MIT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/example.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/example.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/lib/dev-ip.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/lib/dev-ip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/devip.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/devip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-multiple.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-multiple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-none.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-none.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-single.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/dev-ip/test/fixtures/resp-single.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/test/config-defaults.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/test/config-defaults.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/test/lite-server.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/test/lite-server.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/HeaderHostTransformer.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/HeaderHostTransformer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/Tunnel.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/Tunnel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/TunnelCluster.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/lib/TunnelCluster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/localtunnel/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/build/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/build/build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/build/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/build/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/mime.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/mime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/types.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/mime/types.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/range.bnf" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/range.bnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/semver/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/src/throttle.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/src/throttle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/test/throttle_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/stream-throttle/test/throttle_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/window-size/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/person.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/person.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/person.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,31 +195,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "aspect.path.notification.shown": "true",
-    "last_opened_file_path": "C:/Users/stoja/OneDrive/Documents/RBS/SecureSoftwareDevelopment",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "spring.configuration.checksum": "04be61112ca8ab8cd45bb43e6118e48b",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;aspect.path.notification.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/stoja/OneDrive/Documents/RBS/SecureSoftwareDevelopment&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;04be61112ca8ab8cd45bb43e6118e48b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.SecureSoftwareDevelopmentApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="RBS2023-2024" />
@@ -189,7 +321,8 @@
       <workItem from="1703929653677" duration="629000" />
       <workItem from="1703930999804" duration="25079000" />
       <workItem from="1705137908001" duration="274000" />
-      <workItem from="1705138232725" duration="13762000" />
+      <workItem from="1705138232725" duration="15237000" />
+      <workItem from="1705171575111" duration="3632000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670698325007</created>
@@ -219,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705166106394</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CSRF Attack">
+      <created>1705170504352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170504352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +382,8 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Attack!" />
     <MESSAGE value="SQL injection XSS solution for adding new comment and searching persons" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQL injection XSS solution for adding new comment and searching persons" />
+    <MESSAGE value="CSRF Attack" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSRF Attack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,28 +399,29 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/PersonRepository.java</url>
           <line>90</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/PersonRepository.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java</url>
-          <line>55</line>
-          <properties class="com.zuehlke.securesoftwaredevelopment.controller.PersonsController" method="updatePerson">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
+          <line>72</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/config/CsrfHttpSessionListener.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/config/CsrfHttpSessionListener.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
