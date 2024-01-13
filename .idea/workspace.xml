@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="Attack!">
+    <list default="true" id="7426b0dd-4e66-4785-9e7e-e97d54a4a898" name="Changes" comment="SQL injection XSS solution for adding new comment and searching persons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/gift.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/gift.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/persons.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/persons.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/repository/CommentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zuehlke/securesoftwaredevelopment/repository/CommentRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/gift.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/gift.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/persons.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/persons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/ISSUE_TEMPLATE.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/config-defaults.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/config-defaults.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/lite-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/lib/lite-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/csrf-exploit/node_modules/lite-server/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +189,7 @@
       <workItem from="1703929653677" duration="629000" />
       <workItem from="1703930999804" duration="25079000" />
       <workItem from="1705137908001" duration="274000" />
-      <workItem from="1705138232725" duration="10700000" />
+      <workItem from="1705138232725" duration="13762000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1670698325007</created>
@@ -204,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1705163948939</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SQL injection XSS solution for adding new comment and searching persons">
+      <created>1705166106394</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705166106394</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +241,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Init commit" />
     <MESSAGE value="Attack!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attack!" />
+    <MESSAGE value="SQL injection XSS solution for adding new comment and searching persons" />
+    <option name="LAST_COMMIT_MESSAGE" value="SQL injection XSS solution for adding new comment and searching persons" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -240,6 +256,30 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/GiftRepository.java</url>
           <line>106</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/PersonRepository.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/repository/PersonRepository.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zuehlke/securesoftwaredevelopment/controller/PersonsController.java</url>
+          <line>55</line>
+          <properties class="com.zuehlke.securesoftwaredevelopment.controller.PersonsController" method="updatePerson">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
