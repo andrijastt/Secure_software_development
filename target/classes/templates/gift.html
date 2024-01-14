@@ -43,7 +43,7 @@
           <label>My rating:</label>
           <b><label th:text="${userRating}"></label></b>
       </div>
-      <div class="form-group">
+      <div sec:authorize="hasAuthority('RATE_GIFT')" class="form-group">
           <input type="radio" id="1" name="rating" value="1">
           <label for="1">1</label>
           <input type="radio" id="2" name="rating" value="2">
