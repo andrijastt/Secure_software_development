@@ -1,6 +1,7 @@
 package com.zuehlke.securesoftwaredevelopment.repository;
 
 import com.zuehlke.securesoftwaredevelopment.config.AuditLogger;
+import com.zuehlke.securesoftwaredevelopment.config.Entity;
 import com.zuehlke.securesoftwaredevelopment.domain.Tag;
 import com.zuehlke.securesoftwaredevelopment.domain.Gift;
 import com.zuehlke.securesoftwaredevelopment.domain.NewGift;
@@ -36,8 +37,9 @@ public class GiftRepository {
                 Gift gift = createGiftFromResultSet(rs);
                 giftList.add(gift);
             }
+            LOG.info("Getting all gifts");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get all gifts");
         }
         return giftList;
     }
@@ -55,6 +57,7 @@ public class GiftRepository {
             while (rs.next()) {
                 giftList.add(createGiftFromResultSet(rs));
             }
+            LOG.info("Search gifts with parameter: " + searchTerm);
         }
         return giftList;
     }
@@ -74,16 +77,24 @@ public class GiftRepository {
                         try {
                             return g.getId() == rs2.getInt(2);
                         } catch (SQLException e) {
+                            LOG.error("Runtime exception: couldn't filter gift tags for gift with id: " + giftId);
                             throw new RuntimeException(e);
                         }
                     }).findFirst().get();
                     giftTags.add(tag);
                 }
+                List<Tag> oldTags = gift.getTags();
                 gift.setTags(giftTags);
+                AuditLogger.getAuditLogger(GiftRepository.class).auditChange(new Entity(
+                        "gift.changeTags",
+                        String.valueOf(giftId),
+                        oldTags.toString(),
+                        gift.getTags().toString()
+                ));
                 return gift;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get gift with " + giftId + " with tags" + tagList.toString());
         }
 
         return null;
@@ -99,6 +110,7 @@ public class GiftRepository {
             statement.setString(2, gift.getDescription());
             statement.setDouble(3, gift.getPrice());
             statement.executeUpdate();
+            LOG.info("Created new gift: " + gift.toString());
             ResultSet generatedKeys = statement.getGeneratedKeys();
             if (generatedKeys.next()) {
                 id = generatedKeys.getLong(1);
@@ -110,13 +122,14 @@ public class GiftRepository {
                         statement2.setInt(1, (int) finalId);
                         statement2.setInt(2, tag.getId());
                         statement2.executeUpdate();
+                        LOG.info("Created new tags for gift: " + gift.toString() + " tags:" + tagsToInsert.toString());
                     } catch (SQLException e) {
-                        e.printStackTrace();
+                        LOG.error("Couldn't create new tags for gift!");
                     }
                 });
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't create new gift!");
         }
         return id;
     }
@@ -133,8 +146,9 @@ public class GiftRepository {
             statement.executeUpdate(query2);
             statement.executeUpdate(query3);
             statement.executeUpdate(query4);
+            LOG.info("Gift with ID: " + giftId + " deleted!");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't delete gift with ID " + giftId);
         }
     }
 

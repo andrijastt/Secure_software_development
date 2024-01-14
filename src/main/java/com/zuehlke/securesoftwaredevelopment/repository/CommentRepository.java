@@ -1,5 +1,7 @@
 package com.zuehlke.securesoftwaredevelopment.repository;
 
+import com.zuehlke.securesoftwaredevelopment.config.AuditLogger;
+import com.zuehlke.securesoftwaredevelopment.config.Entity;
 import com.zuehlke.securesoftwaredevelopment.domain.Comment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,8 +34,9 @@ public class CommentRepository {
             statement.setInt(2, comment.getUserId());
             statement.setString(3, comment.getComment());
             statement.execute(query);
+            AuditLogger.getAuditLogger(CommentRepository.class).audit("New comment created");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.warn("Couldn't create new comment!");
         }
     }
 
@@ -41,13 +44,14 @@ public class CommentRepository {
         List<Comment> commentList = new ArrayList<>();
         String query = "SELECT giftId, userId, comment FROM comments WHERE giftId = " + giftId;
         try (Connection connection = dataSource.getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(query)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(query)) {
             while (rs.next()) {
                 commentList.add(new Comment(rs.getInt(1), rs.getInt(2), rs.getString(3)));
             }
+            LOG.info("Getting all comments for gift with id: " + giftId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.warn("Couldn't get all comments for gift with id: " + giftId);
         }
         return commentList;
     }

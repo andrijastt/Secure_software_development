@@ -33,8 +33,9 @@ public class PersonRepository {
             while (rs.next()) {
                 personList.add(createPersonFromResultSet(rs));
             }
+            LOG.info("Got all persons");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get all persons");
         }
         return personList;
     }
@@ -44,11 +45,12 @@ public class PersonRepository {
         String query = "SELECT id, firstName, lastName, email FROM persons WHERE UPPER(firstName) like UPPER('%" + searchTerm + "%')" +
                 " OR UPPER(lastName) like UPPER('%" + searchTerm + "%')";
         try (Connection connection = dataSource.getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(query)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(query)) {
             while (rs.next()) {
                 personList.add(createPersonFromResultSet(rs));
             }
+            LOG.info("Person search with param: " + searchTerm);
         }
         return personList;
     }
@@ -56,13 +58,14 @@ public class PersonRepository {
     public Person get(String personId) {
         String query = "SELECT id, firstName, lastName, email FROM persons WHERE id = " + personId;
         try (Connection connection = dataSource.getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet rs = statement.executeQuery(query)) {
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(query)) {
             while (rs.next()) {
                 return createPersonFromResultSet(rs);
             }
+            LOG.info("Found person with id: " + personId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't find person with id: " + personId);
         }
 
         return null;
@@ -74,8 +77,9 @@ public class PersonRepository {
              Statement statement = connection.createStatement();
         ) {
             statement.executeUpdate(query);
+            LOG.info("Deleted person with id: " + personId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't delete person with id: " + personId);
         }
     }
 
@@ -99,8 +103,15 @@ public class PersonRepository {
             statement.setString(1, firstName);
             statement.setString(2, email);
             statement.executeUpdate();
+            AuditLogger.getAuditLogger(PersonRepository.class)
+                    .auditChange(new Entity(
+                            "person.Update",
+                            personFromDb.getId(),
+                            String.valueOf(personFromDb),
+                            String.valueOf(personUpdate)
+                    ));
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't update person with id:" + personUpdate.getId());
         }
     }
 }

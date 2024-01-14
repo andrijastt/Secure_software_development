@@ -31,8 +31,9 @@ public class TagRepository {
             while (rs.next()) {
                 tagList.add(new Tag(rs.getInt(1), rs.getString(2)));
             }
+            LOG.info("Get all tags");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get all tags");
         }
         return tagList;
     }

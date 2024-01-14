@@ -73,12 +73,14 @@ public class PersonsController {
             int userId = currentUser.getId();
             int id = Integer.parseInt(person.getId());
             if(userId != id){
+                LOG.error("User with id: " + userId + " tried to change user with id: " + id + " data");
                 throw new AccessDeniedException("Can't change data!");
             }
         }
 
         String sessionToken = httpSession.getAttribute("CSRF_TOKEN").toString();
         if(!csrfToken.equals(sessionToken)){
+            LOG.error("CSRF_TOKEN doesn't match");
             throw new AccessDeniedException("Access forbidden!");
         }
         personRepository.update(person);

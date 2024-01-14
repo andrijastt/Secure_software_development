@@ -33,8 +33,9 @@ public class UserRepository {
                 String password = rs.getString(3);
                 return new User(id, username1, password);
             }
+            LOG.info("Found user with username: " + username);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't find user with username: " + username);
         }
         return null;
     }
@@ -44,9 +45,10 @@ public class UserRepository {
         try (Connection connection = dataSource.getConnection();
              Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery(query)) {
+            LOG.info("Credentials validated for user: " + username);
             return rs.next();
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't validate credentials for user: " + username);
         }
         return false;
     }
@@ -57,8 +59,9 @@ public class UserRepository {
              Statement statement = connection.createStatement();
         ) {
             statement.executeUpdate(query);
+            LOG.info("User with id: " + userId + " deleted");
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't delete user with id: " + userId);
         }
     }
 }

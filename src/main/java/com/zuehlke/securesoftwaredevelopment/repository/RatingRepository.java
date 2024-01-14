@@ -38,15 +38,17 @@ public class RatingRepository {
                 preparedStatement.setInt(2, rating.getGiftId());
                 preparedStatement.setInt(3, rating.getUserId());
                 preparedStatement.executeUpdate();
+                LOG.info("User with id: " + rating.getUserId() + " updated rating for gift: " + rating.getGiftId() + " to rating: " + rating.getRating());
             } else {
                 PreparedStatement preparedStatement = connection.prepareStatement(query3);
                 preparedStatement.setInt(1, rating.getGiftId());
                 preparedStatement.setInt(2, rating.getUserId());
                 preparedStatement.setInt(3, rating.getRating());
                 preparedStatement.executeUpdate();
+                LOG.info("User with id: " + rating.getUserId() + " inserted rating for gift: " + rating.getGiftId() + " with rating: " + rating.getRating());
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.info("User with id: " + rating.getUserId() + " couldn't insert/update rating for gift: " + rating.getGiftId() + " with rating: " + rating.getRating());
         }
     }
 
@@ -59,8 +61,9 @@ public class RatingRepository {
             while (rs.next()) {
                 ratingList.add(new Rating(rs.getInt(1), rs.getInt(2), rs.getInt(3)));
             }
+            LOG.info("Getting all ratings for gift: " + giftId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get all ratings for gift: " + giftId);
         }
         return ratingList;
     }

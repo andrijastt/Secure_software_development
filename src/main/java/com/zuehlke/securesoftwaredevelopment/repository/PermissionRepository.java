@@ -35,8 +35,9 @@ public class PermissionRepository {
                 String name = rs.getString(2);
                 permissions.add(new Permission(id, name));
             }
+            LOG.info("Permissions got for roleId: " + roleId);
         } catch (SQLException e) {
-            e.printStackTrace();
+            LOG.error("Couldn't get permissions for roleId: " + roleId);
         }
         return permissions;
     }
