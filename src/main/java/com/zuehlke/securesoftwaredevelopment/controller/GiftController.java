@@ -5,6 +5,7 @@ import com.zuehlke.securesoftwaredevelopment.domain.*;
 import com.zuehlke.securesoftwaredevelopment.repository.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -38,12 +39,14 @@ public class GiftController {
     }
 
     @GetMapping("/")
+    @PreAuthorize("hasAuthority('VIEW_GIFT_LIST')")
     public String showSearch(Model model) {
         model.addAttribute("gifts", giftRepository.getAll());
         return "gifts";
     }
 
     @GetMapping("/create-form")
+    @PreAuthorize("hasAuthority('CREATE_GIFT')")
     public String CreateForm(Model model) {
         model.addAttribute("tags", tagRepository.getAll());
         return "create-form";
@@ -99,6 +102,7 @@ public class GiftController {
     }
 
     @GetMapping("/buy-gift/{id}")
+    @PreAuthorize("hasAuthority('BUY_GIFT')")
     public String showBuyCar(
             @PathVariable("id") int id,
             @RequestParam(required = false) boolean addressError,
@@ -117,6 +121,7 @@ public class GiftController {
     }
 
     @PostMapping("/buy-gift/{id}")
+    @PreAuthorize("hasAuthority('BUY_GIFT')")
     public String buyCar(@PathVariable("id") int id, @RequestParam(name = "count", required = true) int count, Address address, Model model) {
         if (address.getAddress().length() < 10) {
             return String.format("redirect:/buy-gift/%s?addressError=true", id);
